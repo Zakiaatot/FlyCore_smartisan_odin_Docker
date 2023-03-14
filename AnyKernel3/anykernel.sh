@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=FlyCore_smartisan_odin_Docker_V1.0.0@zakiaatot
+kernel.string=FlyCore_smartisan_odin_Docker_V1.0.0 @zakiaatot
 do.devicecheck=1
 do.modules=0
 do.systemless=1

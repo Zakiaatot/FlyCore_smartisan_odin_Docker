@@ -18,6 +18,7 @@ fi
 
 export ARCH=arm64
 export CROSS_COMPILE=$PREBUILTS/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export LOCALVERSION=
 make O=out mokee_odin_defconfig
 make -j$(nproc --all) O=out
 
@@ -43,7 +44,6 @@ echo -e "$yellow**** Done, here is your checksum ****$nocol"
 cd ..
 rm -rf $ANYKERNEL3_DIR/$FINAL_KERNEL_ZIP
 rm -rf $ANYKERNEL3_DIR/Image.gz-dtb
-rm -rf out/
 
 echo -e "$yellow Build completed.$nocol"
 sha1sum $FINAL_KERNEL_ZIP
