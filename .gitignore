@@ -99,3 +99,7 @@ all.config
 
 # fetched Android config fragments
 android/configs/android-*.cfg
+
+# 2023.3.14 @Zakiaatot
+out
+prebuilts/*
